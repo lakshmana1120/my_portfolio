@@ -1036,6 +1036,21 @@ section {
     font-size: 3rem;
 }
 
+.project-svg-icon {
+    width: 54px;
+    height: 54px;
+    color: var(--primary-light);
+    stroke-width: 1.5;
+    opacity: 0.85;
+    transition: all var(--transition-normal);
+}
+
+.project-card:hover .project-svg-icon {
+    transform: scale(1.1);
+    opacity: 1;
+    color: var(--secondary);
+}
+
 .project-category-badge {
     position: absolute;
     top: 16px;
@@ -1213,6 +1228,21 @@ section {
 .modal-section p {
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+.modal-bullets-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-bullets-list li {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
 /* ==========================================================================

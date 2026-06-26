@@ -12,58 +12,109 @@ document.addEventListener('DOMContentLoaded', () => {
         'vendor-invoice': {
             title: 'Vendor Invoice Management System',
             category: 'Web Application (Laravel)',
-            purpose: 'Developed to simplify vendor invoice processing and business transaction management. It helps users generate invoices, maintain digital records, and export reports for auditing and operational purposes.',
-            implementation: 'Developed backend modules using Laravel and MySQL for invoice creation, transaction storage, and record management. Implemented barcode generation, PDF/Excel export functionality, and advanced invoice search and filtering features.',
-            stack: 'Laravel, PHP, MySQL, Git, HTML5, CSS3, JavaScript'
+            purpose: 'I developed this web application to simplify and automate vendor invoice processing and sales transactions. The goal was to replace slow, manual paper records with a centralized digital dashboard.',
+            bullets: [
+                'Developed vendor invoice, sales transaction, and vendor management modules using Laravel and integrated them with a MySQL database.',
+                'Implemented PDF and Excel export functionality with barcode generation, enabling users to generate and download business reports.',
+                'Designed multiple invoice print layouts (Original, Duplicate, and Triplicate) based on business requirements.',
+                'Participated in testing, bug fixing, and feature enhancements while collaborating with senior developers during the internship.'
+            ],
+            implementation: 'For this system, I designed the complete database schema in MySQL to manage vendor accounts, sales invoices, and ledger records. I used Laravel\'s Eloquent ORM for handling relations and wrote clean controller logic to process invoice submissions. To handle physical scanning, I integrated a barcode generation package that prints unique validation codes on every invoice PDF. I also spent a lot of time designing print-friendly CSS layouts so users could print original, duplicate, and triplicate invoices directly from the browser, and set up fast Excel export flows using Laravel Excel.',
+            stack: 'Laravel (PHP), MySQL, Git'
         },
         'gmp-audit': {
             title: 'Food Safety GMP Audit Application',
             category: 'Web Application (Laravel)',
-            purpose: 'Designed to digitize food safety audit activities and improve compliance management. The system enables organizations to record audit findings, assign corrective actions, and monitor closure status efficiently.',
-            implementation: 'Developed audit management modules, role-based authentication (RBAC), and workflow tracking using Laravel. Built interactive dashboards and reporting features to provide high-level visibility into audit progress and corrective actions.',
-            stack: 'Laravel, PHP, MySQL, Git, JavaScript, CSS3'
+            purpose: 'I created this audit management system to digitize food safety inspections and Good Manufacturing Practices (GMP) audits. It allows organizations to schedule audits and track compliance logs.',
+            bullets: [
+                'Developed backend modules for audit scheduling, audit observations, and corrective action management using Laravel.',
+                'Implemented role-based authentication and user permission management to provide secure access for different user roles.',
+                'Created REST APIs and optimized database queries to improve application performance and data retrieval.',
+                'Designed real-time dashboards to monitor audit and rectification progress, increasing visibility for management teams.',
+                'Worked on bug fixing, feature enhancements, and testing to ensure smooth functionality before deployment.'
+            ],
+            implementation: 'I built the core framework of this application using Laravel. I designed a custom role-based access control (RBAC) system from scratch, ensuring that inspectors, supervisors, and administrative staff only saw relevant audit screens. I created tables for audit checklists, observation logs, and corrective actions. One of the challenging parts was building the interactive admin dashboard; I wrote optimized SQL aggregation queries to group audit scores and compliance progress, showing real-time charts. I also built API endpoints to allow inspectors to submit checklists from the field without lag.',
+            stack: 'Laravel (PHP), MySQL, Git'
         },
         'hse-app': {
             title: 'Health and Safety Environment Application',
-            category: 'Mobile Application (Flutter)',
-            purpose: 'Helps organizations perform safety inspections and checklist verification through a digital platform. It enables users to submit inspection records and maintain compliance documentation efficiently.',
-            implementation: 'Developed Flutter-based mobile interfaces and integrated Laravel REST APIs for checklist submission workflows. Implemented client-side validation and real-time communication between mobile and backend systems.',
-            stack: 'Flutter, Laravel (REST API), MySQL, Dart'
+            category: 'Mobile & Web Application (Flutter & Laravel)',
+            purpose: 'I built this application to modernize workplace safety inspections. The solution allows field inspectors to fill out safety checklists on their mobile devices and upload findings in real time.',
+            bullets: [
+                'Developed REST APIs in Laravel and integrated them with the Flutter mobile application for seamless data communication.',
+                'Built mobile screens for safety checklists, inspection forms, remarks, and verification workflows using Flutter.',
+                'Designed and maintained MySQL database structures using Eloquent ORM to manage inspection and user data.',
+                'Performed application testing, resolved reported issues, and implemented new requirements based on client feedback.'
+            ],
+            implementation: 'I developed this project as a full-stack solution. On the mobile side, I used Flutter to create a responsive, fluid checklist interface for inspectors on the move. On the backend, I built a secure RESTful API suite in Laravel, protecting endpoints with Sanctum tokens. I set up database tables in MySQL for safety compliance records. A major focus was implementing seamless image uploading, allowing users to take photos of safety hazards on their mobile camera and upload them to the server through Laravel multipart-form requests.',
+            stack: 'Laravel (PHP), Flutter (Dart), MySQL, Git'
         },
         'dispatch-app': {
             title: 'Dispatch Verification Application',
             category: 'Mobile Application (Flutter)',
-            purpose: 'Developed to improve shipment validation and reduce dispatch errors. Users can verify shipment details instantly through barcode scanning before dispatch operations.',
-            implementation: 'Developed a Flutter mobile application with high-speed barcode scanning functionality and backend API integration. Implemented authentication, shipment validation workflows, and comprehensive error handling mechanisms.',
-            stack: 'Flutter, REST API, Barcode Scanner, Dart'
+            purpose: 'I built this mobile application to minimize human errors during warehouse dispatching. It enables workers to instantly cross-check shipment barcodes against invoice details before loading cargo.',
+            bullets: [
+                'Designed responsive mobile screens and layouts with Flutter for dispatch workers.',
+                'Integrated package barcode scanners to verify dispatch records against database rows.',
+                'Built backend REST API endpoints to fetch, match, and validate parcel serial numbers.',
+                'Implemented local storage checks and toast messages to warn packers about incorrect shipments.',
+                'Conducted debugging, testing, and system tuning to guarantee scan accuracy.'
+            ],
+            implementation: 'I built this Flutter application specifically for high-speed barcode validation in warehouses. I integrated the mobile device\'s camera using barcode scanning libraries, optimizing the scan speed for rapid picking. I connected the app to our central API endpoints to download dispatch order sheets. To handle poor internet coverage in basement warehouse bays, I built local state checks using SQLite, validating scans instantly offline. If a worker scans an item that isn\'t part of the target shipping list, the app triggers a large visual error screen and plays an alert sound to immediately flag the mistake.',
+            stack: 'Flutter (Dart), REST API, Barcode Scanner, Git'
         },
         'route-survey': {
             title: 'NTC Route Survey Application',
             category: 'Mobile Application (Flutter)',
-            purpose: 'Assists logistics teams in surveying transportation routes before cargo movement. It enables users to identify obstacles, capture photos, and record route information even in offline environments.',
-            implementation: 'Developed a Flutter mobile application with Google Maps integration and offline storage using SQLite. Implemented obstacle marking, image capture, and automatic synchronization with backend services when connection becomes available.',
-            stack: 'Flutter, SQLite, Google Maps API, REST API, Dart'
+            purpose: 'I developed this mobile tool for logistics teams to survey cargo transportation routes. The app logs GPS positions, captures obstacle images, and maps safe paths for heavy transport.',
+            bullets: [
+                'Developed the Flutter mobile application with Google Maps integration for route navigation and survey data collection.',
+                'Implemented obstacle recording with image capture, GPS coordinates, and detailed survey information for logistics teams.',
+                'Designed offline data storage using SQLite and implemented automatic synchronization when network connectivity was restored.',
+                'Integrated REST APIs with the backend system and worked on performance improvements, testing, and bug fixes.'
+            ],
+            implementation: 'I was the lead developer for this mobile survey app. I integrated the Google Maps Flutter SDK, enabling surveyors to drag-and-drop map markers to plot height clearances, low bridges, and sharp bends. Because logistics routes go through remote zones with no signal, I designed an offline database schema with SQLite to store mapped coordinates and captured photos locally. I then wrote custom background synchronization jobs in Dart that check for network availability and upload all saved survey logs to the Laravel backend as soon as they get a signal.',
+            stack: 'Flutter (Dart), SQLite, Google Maps API, RESTful APIs, Git'
         },
         'driver-app': {
             title: 'NTC Driver Application',
-            category: 'Mobile Application (Flutter)',
-            purpose: 'Developed to manage driver attendance verification and trip expense tracking through a single mobile platform. It improves operational efficiency through secure attendance validation and expense management.',
-            implementation: 'Built Flutter modules for attendance tracking, expense entry, and image uploads. Integrated Laravel APIs, SQLite offline storage, OTP authentication, and Python-based face recognition integration.',
-            stack: 'Flutter, Laravel, SQLite, Python Face Detection, REST API, Dart'
+            category: 'Mobile & Web Application (Flutter & Laravel)',
+            purpose: 'I developed this management application to track driver attendance and trip expenses. It provides a secure, digital portal to replace manual paper receipts and cash request logs.',
+            bullets: [
+                'Developed attendance management and trip expense modules using Flutter and Laravel.',
+                'Integrated Python-based face detection with the Laravel backend for secure driver attendance verification.',
+                'Implemented OTP-based login authentication and developed APIs for communication between mobile and backend systems.',
+                'Added image upload functionality for expense records and participated in testing, bug fixing, and feature improvements.'
+            ],
+            implementation: 'This was an exciting integration project. I built the mobile application in Flutter for drivers to log expenses, check trip sheets, and upload receipt photos. To secure attendance logging, I integrated Python face detection. When a driver registers, the app captures their photo and sends it to our Laravel API, which proxies it to a Python script using facial feature comparison to verify identity. I also set up a secure mobile sign-in flow utilizing SMS OTP validation and designed receipt image upload APIs that compress images before storing them to save server space.',
+            stack: 'Laravel (PHP), Python (Face Detection), Flutter (Dart), SQLite, RESTful APIs, Git'
         },
         'ip-ring': {
-            title: 'IP RING (SCM) – Warehouse & Dispatch Management System',
+            title: 'IP RING (SCM) — Warehouse & Dispatch Management System',
             category: 'Mobile Application (Flutter)',
-            purpose: 'IP RING is a warehouse and supply chain management solution designed to manage inventory movement, packing operations, picklist processing, invoice mapping, and dispatch activities. The system improves operational accuracy through real-time tracking.',
-            implementation: 'Developed Flutter modules for packing, QR code scanning, inventory tracking, invoice mapping, and dispatch workflows. Integrated mobile applications with backend APIs (Frappe Framework) and implemented robust offline synchronization logic.',
-            stack: 'Flutter, Frappe Framework, SQLite, REST API, QR Scanner, Dart'
+            purpose: 'I developed this mobile client for a warehouse and supply chain management system to handle packing, picking, and dispatch workflows. It provides real-time warehouse inventory tracking.',
+            bullets: [
+                'Developed Flutter modules for packing, picklist management, inventory scanning, and dispatch operations based on warehouse workflows.',
+                'Implemented QR code scanning functionality to track inventory movement and improve product traceability throughout the warehouse.',
+                'Integrated the mobile application with backend REST APIs to synchronize warehouse data in real time with the web application.',
+                'Worked closely with the development team to test new features, resolve reported issues, and enhance application performance.'
+            ],
+            implementation: 'I developed this mobile client using Flutter to optimize warehouse picklists and inventory tracking. I integrated a fast QR scanner using mobile camera packages to track inventory moves in real-time. I wrote mobile services to map invoices and process dispatch items, interacting directly with a Frappe/ERPNext backend via REST APIs. To ensure the app remains fully functional in concrete-shielded warehouse sectors, I implemented a local SQLite database that caches picklists and packages, syncing changes back as soon as connection is re-established.',
+            stack: 'Python (Frappe Framework), Flutter (Dart), SQLite, RESTful APIs, Git'
         },
         'erpnext-impl': {
             title: 'ERPNext Implementation for Manufacturing Industry',
-            category: 'Web Application (ERPNext)',
-            purpose: 'Implemented ERPNext for a manufacturing organization to automate and manage business processes across CRM, Sales, Purchase, Inventory, and Manufacturing departments.',
-            implementation: 'Collaborated with stakeholders to gather requirements, configured ERPNext modules, customized workflows, conducted user training, and provided implementation support.',
-            stack: 'ERPNext, Frappe Framework, Python, JavaScript, MariaDB, HTML, CSS, REST APIs, Linux, Git'
+            category: 'ERP Implementation (ERPNext)',
+            purpose: 'I customized and configured ERPNext for a manufacturing business. The objective was to consolidate CRM, sales, purchases, inventory tracking, and manufacturing under a single, unified database.',
+            bullets: [
+                'Configured ERPNext modules for CRM, Sales, Purchase, Inventory, and Manufacturing.',
+                'Designed custom workflows, print formats, and document lifecycles based on business needs.',
+                'Set up API integrations between ERPNext backend and Flutter warehouse clients.',
+                'Migrated legacy data securely to the MariaDB database and optimized indexing.',
+                'Trained team users on production modules and resolved daily system issues.'
+            ],
+            implementation: 'I led the customization and setup of ERPNext. I worked closely with production leads to map out manufacturing workflows, from raw material procurement to product finishing. I customized standard ERPNext DocTypes and created client/server-side scripts in Python and JavaScript to automate material requisitions. I also designed printable sales orders and invoices using HTML/CSS templates within the Jinja templating system, and optimized MariaDB database indexing to handle reports and transactions without slowdowns.',
+            stack: 'ERPNext, Frappe Framework, Python, JavaScript, MariaDB, REST APIs, Linux, Git'
         }
     };
 
@@ -245,7 +296,14 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             
             <div class="modal-section">
-                <div class="modal-section-title">Key Implementation</div>
+                <div class="modal-section-title">Key Accomplishments & Responsibilities</div>
+                <ul class="modal-bullets-list">
+                    ${data.bullets.map(bullet => `<li>${bullet}</li>`).join('')}
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <div class="modal-section-title">Implementation Details</div>
                 <p>${data.implementation}</p>
             </div>
             
