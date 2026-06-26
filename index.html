@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshmanakumar M | Full Stack Developer | Flutter & Laravel Specialist</title>
+    <meta name="description" content="Professional portfolio of Lakshmanakumar M, a Results-driven Full Stack Developer with 4 years of experience specializing in Laravel, Flutter, SQLite, and MySQL.">
+    <meta name="keywords" content="Lakshmanakumar M, Full Stack Developer, Flutter Developer, Laravel Developer, Portfolio, Software Engineer, Mobile Application Developer, Web Developer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Lakshmanakumar M | Full Stack Developer">
+    <meta property="og:description" content="Explore the projects, technical skills, and experience of Lakshmanakumar M, a specialist in Flutter mobile applications and Laravel backend systems.">
+    <meta property="og:image" content="assets/developer_avatar.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Lakshmanakumar M | Full Stack Developer">
+    <meta property="twitter:description" content="Explore the projects, technical skills, and experience of Lakshmanakumar M, a specialist in Flutter mobile applications and Laravel backend systems.">
+    <meta property="twitter:image" content="assets/developer_avatar.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Elements -->
+    <div class="blob-glow-1" id="blobGlow1"></div>
+    <div class="blob-glow-2" id="blobGlow2"></div>
+
+    <!-- Navigation Header -->
+    <header class="header" id="mainHeader">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="navLogo">
+                <span class="logo-accent">&lt;</span>Lakshman<span class="logo-accent">.dev /&gt;</span>
+            </a>
+            
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" id="linkHome">Home</a>
+                <a href="#about" class="nav-link" id="linkAbout">About</a>
+                <a href="#skills" class="nav-link" id="linkSkills">Skills</a>
+                <a href="#experience" class="nav-link" id="linkExperience">Experience</a>
+                <a href="#projects" class="nav-link" id="linkProjects">Projects</a>
+                <a href="#contact" class="nav-link" id="linkContact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Resume Download Icon -->
+                <a href="assets/resume.pdf" download="Lakshmanakumar_Resume.pdf" class="theme-toggle btn-resume-nav" id="btnResumeNav" title="Download Resume" aria-label="Download Resume">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </a>
+
+                <!-- Theme Switcher -->
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="welcome-tag" id="welcomeTag">Welcome to my space</span>
+                    <h1 class="hero-name" id="heroName">Lakshmanakumar M</h1>
+                    
+                    <div class="typewriter-container">
+                        <span class="static-txt">I am a</span>
+                        <span class="typewriter-txt" id="typewriterTxt">Full Stack Developer</span>
+                        <span class="cursor" id="typewriterCursor">|</span>
+                    </div>
+
+                    <p class="hero-description" id="heroDesc">
+                        Specializing in building scalable, offline-capable mobile applications with Flutter, powerful web backends using the Laravel framework, and ERPNext implementations. Transforming complex ideas into smooth, high-performing digital realities.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" id="btnHeroContact">Get In Touch</a>
+                        <a href="assets/resume.pdf" download="Lakshmanakumar_Resume.pdf" class="btn btn-outline" id="btnHeroResume" style="border-color: var(--secondary); color: var(--secondary);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px; margin-right: 4px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                            Download Resume
+                        </a>
+                        <a href="#projects" class="btn btn-outline" id="btnHeroProjects">View Portfolio</a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" id="heroGit" aria-label="GitHub Portfolio">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" id="heroLinkedin" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" id="heroVisual">
+                    <div class="avatar-card">
+                        <div class="card-inner">
+                            <img src="assets/developer_avatar.png" alt="Lakshmanakumar M Avatar" class="avatar-img" id="avatarImg">
+                            <div class="experience-badge" id="expBadge">
+                                <span class="badge-num">4+</span>
+                                <span class="badge-text">Years<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <div class="mouse-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About / Profile Objectives Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title" id="aboutTitle">My Professional Objectives</h2>
+                <p class="section-subtitle">A multi-faceted developer tailored to meet various project architectures.</p>
+                
+                <div class="objectives-tabs" id="objectivesTabs">
+                    <button class="tab-btn active" data-tab="fullstack" id="tabFullstack">Full Stack Developer</button>
+                    <button class="tab-btn" data-tab="mobile" id="tabMobile">Mobile Developer</button>
+                    <button class="tab-btn" data-tab="backend" id="tabBackend">Laravel Backend Developer</button>
+                </div>
+
+                <div class="tab-content-container" id="tabContentContainer">
+                    <!-- Full Stack Tab -->
+                    <div class="tab-pane active" id="pane-fullstack">
+                        <div class="objective-content-grid">
+                            <div class="objective-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <div class="objective-details">
+                                <h3>Full Stack Architecture</h3>
+                                <p class="objective-text">
+                                    Results-driven Full Stack Developer specializing in building scalable web and mobile applications using Laravel, Flutter technologies, and ERPNext implementations. Skilled in REST API development, database design, mobile application architecture, offline synchronization, and system integration.
+                                </p>
+                                <ul class="features-list">
+                                    <li><span>✔</span> Complete End-to-End Development</li>
+                                    <li><span>✔</span> Fluid Integration between Web, API, and Mobile Clients</li>
+                                    <li><span>✔</span> Advanced Database Modeling & Workflow Mapping</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Tab -->
+                    <div class="tab-pane" id="pane-mobile">
+                        <div class="objective-content-grid">
+                            <div class="objective-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </div>
+                            <div class="objective-details">
+                                <h3>Mobile Application Innovation</h3>
+                                <p class="objective-text">
+                                    Dedicated Mobile Application Developer focused on building Android applications using Flutter, SQLite, Google Maps, and QR/Barcode technologies. Experienced in developing offline-capable mobile solutions and integrating applications with backend API services.
+                                </p>
+                                <ul class="features-list">
+                                    <li><span>✔</span> Offline-First Design with SQLite Synchronization</li>
+                                    <li><span>✔</span> Google Maps API, GPS tracking, and Geofencing</li>
+                                    <li><span>✔</span> Hardware Integration: Barcode/QR Scanning, Biometrics/Face Recognition</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Tab -->
+                    <div class="tab-pane" id="pane-backend">
+                        <div class="objective-content-grid">
+                            <div class="objective-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            </div>
+                            <div class="objective-details">
+                                <h3>Secure Backend Development</h3>
+                                <p class="objective-text">
+                                    Detail-oriented Laravel Developer specializing in backend application development using Laravel, MySQL, and RESTful APIs. Experienced in designing secure business workflows, authentication systems, and scalable backend services supporting mobile applications.
+                                </p>
+                                <ul class="features-list">
+                                    <li><span>✔</span> Secure Authentication & Role-Based Access Control (RBAC)</li>
+                                    <li><span>✔</span> API Gateway Optimization & Response Caching</li>
+                                    <li><span>✔</span> Complex Business Workflow automation & Automated Exports</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <p class="section-subtitle">Modern technologies and frameworks used to create efficient software solutions.</p>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Backend Skills Card -->
+                    <div class="skill-card" id="skillCardBackend">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            </div>
+                            <h3>Backend Core</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">PHP</span>
+                            <span class="skill-badge">Laravel</span>
+                            <span class="skill-badge">REST API Development</span>
+                            <span class="skill-badge">Auth & Security</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Skills Card -->
+                    <div class="skill-card" id="skillCardMobile">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><device-phone-mobile></device-phone-mobile><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            </div>
+                            <h3>Mobile Stack</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">Flutter</span>
+                            <span class="skill-badge">Dart</span>
+                            <span class="skill-badge">SQLite</span>
+                            <span class="skill-badge">Android Development</span>
+                        </div>
+                    </div>
+
+                    <!-- Database Skills Card -->
+                    <div class="skill-card" id="skillCardDatabase">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                            </div>
+                            <h3>Database Systems</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">MySQL / MariaDB</span>
+                            <span class="skill-badge">SQLite</span>
+                            <span class="skill-badge">Query Optimization</span>
+                            <span class="skill-badge">Database Design</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Skills Card -->
+                    <div class="skill-card" id="skillCardFrontend">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                            <h3>Frontend Core</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript (ES6+)</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms Card -->
+                    <div class="skill-card" id="skillCardTools">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            </div>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">Git & GitHub</span>
+                            <span class="skill-badge">Postman</span>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">ERPNext / Frappe</span>
+                        </div>
+                    </div>
+
+                    <!-- Integrations Card -->
+                    <div class="skill-card" id="skillCardIntegrations">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            </div>
+                            <h3>Special Hardware & APIs</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">Google Maps API</span>
+                            <span class="skill-badge">QR / Barcode Scanning</span>
+                            <span class="skill-badge">Python Face Detection</span>
+                            <span class="skill-badge">Frappe Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">Overview of professional work experience in software development.</p>
+
+                <div class="timeline-container">
+                    <div class="timeline-item" id="timelineItem1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Feb 2022 – Present</div>
+                        <div class="timeline-body">
+                            <h3 class="timeline-title">Software Developer & ERPNext Consultant</h3>
+                            <h4 class="timeline-company">Mazeworks Solutions Private Ltd. (4 Years Experience)</h4>
+                            <p class="timeline-desc">
+                                Acted as a key Software Developer managing the development lifecycle across business-critical web, mobile application ecosystems, and ERP implementations.
+                            </p>
+                            
+                            <h5 class="responsibilities-header">Key Responsibilities:</h5>
+                            <ul class="responsibilities-list">
+                                <li>Implemented ERPNext for manufacturing workflows including CRM, Sales, Purchase, Inventory, and Manufacturing.</li>
+                                <li>Designed and developed Laravel backend applications, web interfaces, and secure API gateways.</li>
+                                <li>Built high-performing mobile clients with Flutter for real-time business and warehouse processes.</li>
+                                <li>Implemented offline-first databases using SQLite with automated synchronization features.</li>
+                                <li>Integrated physical hardware capabilities (QR/barcode scanning) and geolocation services (Google Maps API).</li>
+                                <li>Created and optimized complex databases (MySQL/MariaDB), indexing, and query structures.</li>
+                                <li>Collaborated closely with business users to translate requirements into code, performed bug fixes, testing, deployment, and live production support.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Portfolio Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects Portfolio</h2>
+                <p class="section-subtitle">Discover the web and mobile applications I have designed and implemented.</p>
+
+                <!-- Project Filters -->
+                <div class="project-filters" id="projectFilters">
+                    <button class="filter-btn active" data-filter="all" id="btnFilterAll">All Projects</button>
+                    <button class="filter-btn" data-filter="web" id="btnFilterWeb">Web Applications</button>
+                    <button class="filter-btn" data-filter="mobile" id="btnFilterMobile">Mobile Applications</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project 1 (Web) -->
+                    <article class="project-card" data-category="web" id="projectCard1">
+                        <div class="project-card-banner web-banner">
+                            <span class="project-icon">📄</span>
+                            <span class="project-category-badge">Web</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Vendor Invoice Management System</h3>
+                            <p class="project-excerpt">Simplifies vendor invoice processing, barcode generation, transactions storage, and exports reports.</p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="vendor-invoice" id="btnDetails1">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 (Web) -->
+                    <article class="project-card" data-category="web" id="projectCard2">
+                        <div class="project-card-banner web-banner">
+                            <span class="project-icon">⚖️</span>
+                            <span class="project-category-badge">Web</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Food Safety GMP Audit Application</h3>
+                            <p class="project-excerpt">Digitizes audits and safety compliance, offering dashboards and progress indicators for auditing tasks.</p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="gmp-audit" id="btnDetails2">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 (Mobile) -->
+                    <article class="project-card" data-category="mobile" id="projectCard3">
+                        <div class="project-card-banner mobile-banner">
+                            <span class="project-icon">🛡️</span>
+                            <span class="project-category-badge">Mobile</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Health & Safety Environment App</h3>
+                            <p class="project-excerpt">Mobile platform for conducting safety inspections, checklists, and real-time validation via REST APIs.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Laravel API</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="hse-app" id="btnDetails3">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 (Mobile) -->
+                    <article class="project-card" data-category="mobile" id="projectCard4">
+                        <div class="project-card-banner mobile-banner">
+                            <span class="project-icon">📦</span>
+                            <span class="project-category-badge">Mobile</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">Dispatch Verification Application</h3>
+                            <p class="project-excerpt">Reduces dispatch errors by validating shipment details instantly through integrated barcode scanners.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">Barcode</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="dispatch-app" id="btnDetails4">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 (Mobile) -->
+                    <article class="project-card" data-category="mobile" id="projectCard5">
+                        <div class="project-card-banner mobile-banner">
+                            <span class="project-icon">🗺️</span>
+                            <span class="project-category-badge">Mobile</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">NTC Route Survey Application</h3>
+                            <p class="project-excerpt">Enables logistics teams to map transportation routes offline with SQLite and mark obstacles via Google Maps.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Google Maps</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="route-survey" id="btnDetails5">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 (Mobile) -->
+                    <article class="project-card" data-category="mobile" id="projectCard6">
+                        <div class="project-card-banner mobile-banner">
+                            <span class="project-icon">👤</span>
+                            <span class="project-category-badge">Mobile</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">NTC Driver Application</h3>
+                            <p class="project-excerpt">Manages driver attendance using Python Face Detection, OTP security, offline capability, and expense tracking.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Face Detection</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="driver-app" id="btnDetails6">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 (Mobile) -->
+                    <article class="project-card" data-category="mobile" id="projectCard7">
+                        <div class="project-card-banner mobile-banner">
+                            <span class="project-icon">🏭</span>
+                            <span class="project-category-badge">Mobile</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">IP RING (SCM) Warehouse App</h3>
+                            <p class="project-excerpt">SCM warehouse management client supporting offline packing operations, picklists, and QR scanning workflows.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Frappe API</span>
+                                <span class="tag">SQLite</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="ip-ring" id="btnDetails7">Explore Project</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 (Web) -->
+                    <article class="project-card" data-category="web" id="projectCard8">
+                        <div class="project-card-banner web-banner">
+                            <span class="project-icon">⚙️</span>
+                            <span class="project-category-badge">Web</span>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-title">ERPNext Implementation for Manufacturing</h3>
+                            <p class="project-excerpt">Automated business processes across CRM, Sales, Purchase, Inventory, and Manufacturing using ERPNext.</p>
+                            <div class="project-tags">
+                                <span class="tag">ERPNext</span>
+                                <span class="tag">Frappe</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <button class="btn btn-card-details" data-project="erpnext-impl" id="btnDetails8">Explore Project</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modal (Interactive Popup) -->
+        <div class="modal" id="projectModal" aria-hidden="true">
+            <div class="modal-overlay" id="modalOverlay"></div>
+            <div class="modal-wrapper">
+                <button class="modal-close" id="modalCloseBtn" aria-label="Close Project Details Dialog">&times;</button>
+                <div class="modal-content" id="modalContent">
+                    <!-- Dynamic details are inserted by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Certifications Section -->
+        <section class="education-section" id="education">
+            <div class="container">
+                <div class="education-grid">
+                    <!-- Academic Education -->
+                    <div class="education-block">
+                        <h2 class="section-title left-align">Education</h2>
+                        <div class="education-card" id="eduCard1">
+                            <span class="edu-year">2020 – 2022</span>
+                            <h3>Master of Computer Application (MCA)</h3>
+                            <p class="edu-inst">Ayya Nadar Janaki Ammal College, Sivakasi</p>
+                            <span class="edu-grade">Grade: 68%</span>
+                        </div>
+                        <div class="education-card" id="eduCard2">
+                            <span class="edu-year">2017 – 2020</span>
+                            <h3>B.Com (E-Commerce)</h3>
+                            <p class="edu-inst">Ayya Nadar Janaki Ammal College, Sivakasi</p>
+                            <span class="edu-grade">Grade: 71%</span>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="certifications-block">
+                        <h2 class="section-title left-align">Certifications</h2>
+                        <ul class="cert-list" id="certList">
+                            <li>
+                                <div class="cert-icon">🏆</div>
+                                <div class="cert-details">
+                                    <h4>Flutter Development Certification</h4>
+                                    <p>Advanced UI design, State Management, and hardware API configurations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-icon">🏆</div>
+                                <div class="cert-details">
+                                    <h4>Laravel Development Certification</h4>
+                                    <p>Server-side logic, database relationships, security and queue processing.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-icon">🏆</div>
+                                <div class="cert-details">
+                                    <h4>REST API Development</h4>
+                                    <p>API structures, security standards, pagination, and high performance responses.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cert-icon">🏆</div>
+                                <div class="cert-details">
+                                    <h4>Git & GitHub</h4>
+                                    <p>Version control management, workflow orchestration, collaborative merging and hooks.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strengths & Languages (Compact section) -->
+        <section class="strengths-section">
+            <div class="container">
+                <div class="strengths-grid">
+                    <div>
+                        <h3 class="sub-section-title">Key Strengths</h3>
+                        <div class="strengths-badges" id="strengthsGrid">
+                            <span class="strength-badge">Problem Solving</span>
+                            <span class="strength-badge">Analytical Thinking</span>
+                            <span class="strength-badge">Team Collaboration</span>
+                            <span class="strength-badge">Adaptability</span>
+                            <span class="strength-badge">Quick Learning</span>
+                            <span class="strength-badge">Time Management</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="sub-section-title">Languages</h3>
+                        <div class="languages-box" id="languagesBox">
+                            <div class="lang-item">
+                                <span class="lang-name">English</span>
+                                <div class="lang-bar"><div class="lang-fill" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="lang-item">
+                                <span class="lang-name">Tamil</span>
+                                <div class="lang-bar"><div class="lang-fill" style="width: 100%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project or opportunity? Send a message directly.</p>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3>Contact Details</h3>
+                        <p class="contact-info-desc">Feel free to reach out via phone, email, or social media links.</p>
+
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+919876543210" id="infoPhone">+91 84899 64145</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:lakshmana1120@gmail.com" id="infoEmail">lakshmana1120@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p id="infoLocation">Chennai, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Full Name</label>
+                            <input type="text" id="contactName" class="form-control" placeholder="Enter your name" required>
+                            <span class="error-msg" id="nameError">Name is required.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" id="contactEmail" class="form-control" placeholder="Enter your email" required>
+                            <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" id="contactSubject" class="form-control" placeholder="Enter subject" required>
+                            <span class="error-msg" id="subjectError">Subject is required.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea id="contactMessage" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                            <span class="error-msg" id="messageError">Message is required.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="btnSubmitForm">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="submitToast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            <span class="toast-icon">✓</span>
+            <span class="toast-message" id="toastMessage">Your message has been sent successfully!</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Lakshmanakumar M. All rights reserved.</p>
+                <p class="declaration-text">
+                    <strong>Declaration:</strong> I hereby declare that the information provided above is true and correct to the best of my knowledge.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Customizer Panel -->
+    <button class="customizer-toggle-btn" id="customizerToggleBtn" aria-label="Open Portfolio Customizer" title="Customize Photo & Resume">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+    </button>
+
+    <div class="customizer-drawer" id="customizerDrawer" aria-hidden="true">
+        <div class="customizer-overlay" id="customizerOverlay"></div>
+        <div class="customizer-container">
+            <div class="customizer-header">
+                <h3>Portfolio Customizer</h3>
+                <button class="customizer-close-btn" id="customizerCloseBtn" aria-label="Close Customizer">&times;</button>
+            </div>
+            <div class="customizer-body">
+                <p class="customizer-intro">Use this panel to temporarily preview your custom photo and resume in this browser session.</p>
+                
+                <!-- Photo Upload -->
+                <div class="customizer-field">
+                    <label class="customizer-label">1. Update Profile Photo</label>
+                    <label class="file-upload-badge" for="customPhotoInput">
+                        Choose Image
+                        <input type="file" id="customPhotoInput" accept="image/*">
+                    </label>
+                    <span class="file-name-display" id="photoNameDisplay">No file chosen</span>
+                </div>
+                
+                <!-- Resume Upload -->
+                <div class="customizer-field">
+                    <label class="customizer-label">2. Update Resume PDF</label>
+                    <label class="file-upload-badge" for="customResumeInput">
+                        Choose PDF File
+                        <input type="file" id="customResumeInput" accept="application/pdf">
+                    </label>
+                    <span class="file-name-display" id="resumeNameDisplay">No file chosen</span>
+                </div>
+
+                <!-- Overwrite Instructions -->
+                <div class="customizer-instructions">
+                    <h4>To Save Permanently:</h4>
+                    <p>Copy your preferred files directly into your workspace directories: </p>
+                    <ul class="instructions-steps">
+                        <li>Replace your photo at:<br><code>d:/website/assets/developer_avatar.png</code></li>
+                        <li>Replace your resume PDF at:<br><code>d:/website/assets/resume.pdf</code></li>
+                    </ul>
+                    <p class="note">Make sure the filenames and file extensions match exactly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
